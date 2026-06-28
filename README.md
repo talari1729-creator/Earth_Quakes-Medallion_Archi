@@ -1,7 +1,7 @@
 ![project image](https://github.com/talari1729-creator/-Earth_Quakes_Medallion_Archi_Project/blob/dc2b2253067f1b12ab5bfbb9af65ab9d01c5be04/EarthQuakes-Project%20Diagram.png)
 Project Description
 
-Project Title: Earthquake Data Engineering Pipeline using Medallion Architecture
+Project Title: Earthquake Data Engineering Pipeline using Medallion Architecture.
 
 This project demonstrates the implementation of a Medallion Architecture (Ingestion → Bronze → Silver → Gold) to build a scalable, reliable, and analytics-ready data pipeline for earthquake data. The source dataset, EarthQuakes.csv, contains information about earthquake events such as occurrence time, location, latitude, longitude, depth, magnitude, and other seismic attributes.
 
@@ -31,7 +31,7 @@ Project Business Objectives
 Folder Structure
 
                                        
-                                              │ Earthquake_Project/
+│ Earthquake_Project
 ├── data/
 │   └── EarthQuakes.csv
 │
@@ -51,7 +51,7 @@ Folder Structure
 
 Architecture Flow
 
-               EarthQuakes.csv
+   EarthQuakes.csv
                      │
                      ▼
               Ingestion Layer
@@ -70,4 +70,26 @@ Architecture Flow
                      │
                      ▼
         Power BI / Tableau / SQL
+
+Data Flow
+
+CSV File
+     │
+     ▼
+Ingestion
+     │
+     ▼
+Bronze
+(Raw Data)
+     │
+     ▼
+Silver
+(Cleaned Data)
+     │
+     ▼
+Gold
+(Aggregated Analytics)
+     │
+     ▼
+Power BI Dashboard
 
