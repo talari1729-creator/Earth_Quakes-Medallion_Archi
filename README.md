@@ -11,7 +11,7 @@ Jobs Execution-Graph
 ![job execution-grapg](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/8b34d25128706022f3e492fe3025325f4066163b/Job%20Execution-Graph.png)
 
 
-[1].Project Description 
+1.Project Description 
 
 Project Title: Earthquake Data Engineering Pipeline using Medallion Architecture.
 
@@ -21,23 +21,23 @@ The project also includes production-level components such as centralized loggin
 
 To solve this challenge, an end-to-end data engineering platform was developed using Azure Data Factory (ADF) for orchestration, Azure Databricks (ADB) for transformations, Azure Data Lake Storage Gen2 (ADLS) for storage, and Delta Lake with Medallion Architecture for data processing. The solution ingests data from five different source systems, stores raw data in the Bronze layer, transforms and standardizes it in the Silver layer, and creates business-ready Gold datasets for reporting, analytics, machine learning, and executive dashboards.
 
-[2].Tools
+2.Tools
 
 Azure Databricks Azure Data Lake Storage Gen2 PySpark Delta Lake Python SQL GitHub Databricks Workflows Table of Contents Project Overview Business Problem Project Objectives Solution Architecture Medallion Architecture Technology Stack Project Folder Structure Source Data Description ADLS Storage Structure Raw Layer Bronze Layer Silver Layer Gold Layer Delta Lake Batch Processing Logger Framework Validation Framework Audit Framework Databricks Workflow Job Scheduling (Cron) Pipeline Execution Screenshots Performance Optimizations Future Enhancements Conclusion References
 
 
-[3].Source System->National Earthquake Information Center (NEIC)
+3.Source System->National Earthquake Information Center (NEIC)
 
-[4].Project Context
+4.Project Context
 
 The National Earthquake Information Center (NEIC) determines the location and size of all significant earthquakes that occur worldwide and disseminates this information immediately to national and international agencies, scientists, critical facilities, and the general public. The NEIC compiles and provides to scientists and to the public an extensive seismic database that serves as a foundation for scientific research through the operation of modern digital national and global seismograph networks and cooperative international agreements. The NEIC is the national data center and archive for earthquake information.
 
-[5].Project Content
+5.Project Content
 
 This dataset includes a record of the date, time, location, depth, magnitude, and source of every earthquake with a reported magnitude 5.5 or higher since 1965.
 
 
-[6].Project Business Objectives
+6.Project Business Objectives
 
 ->Build an end-to-end data engineering pipeline using Medallion Architecture.
 
@@ -52,7 +52,7 @@ This dataset includes a record of the date, time, location, depth, magnitude, an
 ->Enable efficient querying and dashboard creation using curated Gold tables.
 
 
-[7].Folder Structure
+7.Folder Structure
 
 Earthquake_Project/
 │
@@ -70,9 +70,79 @@ Earthquake_Project/
 │   ├── silver/
 │   └── gold/
 │
-└── README.md  make this as image                                  
+└── README.md  make this as image    
 
-[8]Architecture Flow
+
+8.Medallion Architecture Layers and Purposes
+
+1. Ingestion Layer
+
+Definition:
+The Ingestion Layer is responsible for collecting data from different source systems and loading it into the data platform without modifying the original data.
+
+Purpose:
+
+->Collect data from source systems
+
+->Preserve raw data
+
+->Prepare data for the Bronze layer
+
+2. Bronze Layer (Raw Layer)
+
+Definition:
+The Bronze Layer stores the raw ingested data in its original format with minimal transformations, ensuring that the source data is preserved for future reference.
+
+Purpose:
+
+->Store raw data
+
+->Add basic metadata (Batch ID, Ingestion Timestamp, Source)
+
+->Preserve data lineage
+
+->Serve as the source for the Silver layer
+
+3. Silver Layer (Cleaned Layer)
+
+Definition:
+The Silver Layer cleanses, validates, and standardizes the Bronze data by removing duplicates, handling null values, correcting data types, and applying business rules to produce high-quality data.
+
+Purpose:
+
+->Remove duplicates
+
+->Handle null values
+
+->Standardize data formats
+
+->Validate data quality
+
+->Apply business rules
+
+->Generate rejected records and audit reports
+
+->Create clean Delta tables
+
+4. Gold Layer (Business Layer)
+
+Definition:
+The Gold Layer contains business-ready, aggregated, and curated data optimized for reporting, dashboards, analytics, and machine learning.
+
+Purpose:
+
+->Create business metrics
+
+->Aggregate and summarize data
+
+->Build reporting tables
+
+->Support BI dashboards and data analysis
+
+->Provide trusted datasets for end users
+
+
+9.Architecture Flow
 
 EarthQuakes.csv
         │
@@ -94,7 +164,7 @@ EarthQuakes.csv
         ▼
  Power BI Dashboard
 
-[9].Data Flow
+10.Data Flow
 
 CSV File
      │
