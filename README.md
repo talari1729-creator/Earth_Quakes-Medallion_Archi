@@ -3,7 +3,7 @@
 
 Project Title: Earthquake Data Engineering Pipeline using Medallion Architecture.
 
-                This project demonstrates the implementation of a Medallion Architecture (Ingestion → Bronze → Silver → Gold) to build a scalable, reliable, and analytics-ready data pipeline for earthquake data. The source dataset, EarthQuakes.csv, contains information about earthquake events such as occurrence time, location, latitude, longitude, depth, magnitude, and other seismic attributes.
+    This project demonstrates the implementation of a Medallion Architecture (Ingestion → Bronze → Silver → Gold) to build a scalable, reliable, and analytics-ready data pipeline for earthquake data. The source dataset, EarthQuakes.csv, contains information about earthquake events such as occurrence time, location, latitude, longitude, depth, magnitude, and other seismic attributes.
 
                 The project also includes production-level components such as centralized logging, validation, audit checks, batch processing, and automated workflow orchestration using Databricks Workflows.
 
