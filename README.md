@@ -2,6 +2,10 @@ Project Over Flow Diagram
 
 ![Project Image](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/b94e024092d62cc079b3cfef7881ea135dc55a77/EarthQuakes-Project%20Diagram.png)
 
+Tasks Runs
+
+![tasks runs](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/21a88d4c0361fe7ed99c78e1d5ee544f5ec3a812/Job%20Execution-Task%20Runs.png)
+
 Jobs Execution-Graph
 
 ![job execution-grapg](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/8b34d25128706022f3e492fe3025325f4066163b/Job%20Execution-Graph.png)
