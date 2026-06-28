@@ -30,24 +30,7 @@ Project Business Objectives
 
 Folder Structure
 
-                                       
-│ Earthquake_Project
-├── data/
-│   └── EarthQuakes.csv
-│
-├── notebooks/
-│   ├── 01_Ingestion.py
-│   ├── 02_Bronze.py
-│   ├── 03_Silver.py
-│   └── 04_Gold.py
-│
-├── tables/
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
-│
-└── README.md
-
+   ![project filder structure](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/050ba0ad20eda318b027edf7f9aaf61348cc8896/EarthQuakes-Folder%20Structure.png)                                   
 
 Architecture Flow
 
