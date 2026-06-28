@@ -5,6 +5,8 @@ Project Title: Earthquake Data Engineering Pipeline using Medallion Architecture
 
 This project demonstrates the implementation of a Medallion Architecture (Ingestion → Bronze → Silver → Gold) to build a scalable, reliable, and analytics-ready data pipeline for earthquake data. The source dataset, EarthQuakes.csv, contains information about earthquake events such as occurrence time, location, latitude, longitude, depth, magnitude, and other seismic attributes.
 
+The project also includes production-level components such as centralized logging, validation, audit checks, batch processing, and automated workflow orchestration using Databricks Workflows.
+
 To solve this challenge, an end-to-end data engineering platform was developed using Azure Data Factory (ADF) for orchestration, Azure Databricks (ADB) for transformations, Azure Data Lake Storage Gen2 (ADLS) for storage, and Delta Lake with Medallion Architecture for data processing. The solution ingests data from five different source systems, stores raw data in the Bronze layer, transforms and standardizes it in the Silver layer, and creates business-ready Gold datasets for reporting, analytics, machine learning, and executive dashboards.
 
 [2].Tools
