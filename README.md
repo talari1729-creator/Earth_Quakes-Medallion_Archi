@@ -34,25 +34,7 @@ Folder Structure
 
 Architecture Flow
 
-              EarthQuakes.csv
-                     │
-                     ▼
-              Ingestion Layer
-                     │
-                     ▼
-              Bronze Layer
-          (Raw Data Storage)
-                     │
-                     ▼
-              Silver Layer
-      (Cleaned & Standardized)
-                     │
-                     ▼
-               Gold Layer
-    (Business & Analytical Tables)
-                     │
-                     ▼
-        Power BI / Tableau / SQL
+![project Archi flow](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/65ab5bbe719bba711647a8d76f65ce1f75d31846/EarthQuakes-Archi%20Flow.png)
 
 Data Flow
 
