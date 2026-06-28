@@ -73,6 +73,8 @@ Earthquake_Project/
 └── README.md  make this as image    
 
 
+
+
 8.Medallion Architecture Layers and Purposes
 
 1. Ingestion Layer
@@ -143,6 +145,7 @@ Purpose:
 
 
 9.Architecture Flow
+![Architecture Flow](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/1fd9fbf5e93c8364c4e50ce2b5cbaf6855ea7bc6/Medallion_Archi_Flow.png)
 
 EarthQuakes.csv
         │
@@ -160,9 +163,7 @@ EarthQuakes.csv
         ▼
   Gold Layer
 (Business & Analytics)
-        │
-        ▼
- Power BI Dashboard
+
 
 10.Data Flow
 
