@@ -51,7 +51,7 @@ Folder Structure
 
 Architecture Flow
 
-   EarthQuakes.csv
+              EarthQuakes.csv
                      │
                      ▼
               Ingestion Layer
@@ -89,7 +89,5 @@ Silver
      ▼
 Gold
 (Aggregated Analytics)
-     │
-     ▼
-Power BI Dashboard
+
 
