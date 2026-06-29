@@ -1,4 +1,6 @@
-### powershell Project Over Flow Diagram 
+### ```power shell 
+Project Over Flow Diagram 
+```
 
 
 ![Project Image](https://github.com/talari1729-creator/Earth_Quakes-Medallion_Archi/blob/b94e024092d62cc079b3cfef7881ea135dc55a77/EarthQuakes-Project%20Diagram.png)
